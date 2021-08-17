@@ -14,7 +14,8 @@ RUN apt-get update && apt-get install -y \
     busybox \
     build-essential \
     nodejs \
-    npm \
+    npm \ 
+    ffmpeg \
  && mkdir -p /home/stuff
 
 # Set work dir:
