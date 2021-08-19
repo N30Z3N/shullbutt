@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \ 
     ffmpeg \
+    mediainfo \
  && mkdir -p /home/stuff
 
 # Set work dir:
