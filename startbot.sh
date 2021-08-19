@@ -10,8 +10,9 @@ echo "Creating config.json..."
 cd /home/shell-bot
 cat > config.json << EOF
 {
-    "authToken": "$BOT_TOKEN",
-    "owner": $OWN_ID
+    "API_ID": "$API_HASH",
+    "API_HASH": "$API_HASH",
+    "BOT_TOKEN": $BOT_TOKEN
 }
 EOF
 echo "Done."
