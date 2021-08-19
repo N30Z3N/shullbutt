@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y \
     npm \ 
     ffmpeg \
     mediainfo \
+    python3-pip \
+    python3 \
  && mkdir -p /home/stuff
 
 # Set work dir:
@@ -32,8 +34,8 @@ RUN sh /home/config.sh \
  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://github.com/botgram/shell-bot.git \
- && cd shell-bot \
+RUN git clone https://github.com/MadeWiguna/Nyaa-Telegram-Bot.git \
+ && Nyaa-Telegram-Bot \
  && npm install
 
 RUN echo "Uploaded files:" && ls /home/stuff/
