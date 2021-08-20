@@ -7,7 +7,7 @@
 ## restart the bot by turning the worker off and back on
 
 echo "Creating config.json..."
-cd /home/shell-bot
+cd /home/Nyaa-Telegram-Bot
 cat > config.json << EOF
 {
     "API_ID": "$API_HASH",
@@ -18,4 +18,4 @@ EOF
 echo "Done."
 
 echo "Starting Bot..."
-node server
+python3 -m bot
