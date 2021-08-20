@@ -34,8 +34,8 @@ RUN sh /home/config.sh \
  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://github.com/MadeWiguna/Nyaa-Telegram-Bot.git \
- && cd Nyaa-Telegram-Bot \
+RUN git clone https://github.com/MadeWiguna/wiguna-cermin.git \
+ && cd wiguna-cermin \
  && pip3 install -r requirements.txt
 
 RUN echo "Uploaded files:" && ls /home/stuff/
