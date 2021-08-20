@@ -8,7 +8,7 @@
 
 echo "Creating config.json..."
 cd /home/Nyaa-Telegram-Bot
-cat > config.json << EOF
+cat > requirements.txt << EOF
 {
     "API_ID": "$API_HASH",
     "API_HASH": "$API_HASH",
