@@ -6,13 +6,13 @@
 ## edit your Config Vars in heroku/app/settings and 
 ## restart the bot by turning the worker off and back on
 
-echo "Creating config.json..."
+echo "Creating requirements.txt..."
 cd /home/Nyaa-Telegram-Bot
 cat > requirements.txt << EOF
 {
-    "API_ID": "$API_HASH",
-    "API_HASH": "$API_HASH",
-    "BOT_TOKEN": $BOT_TOKEN
+pyrogram
+aiohttp
+TgCrypto
 }
 EOF
 echo "Done."
