@@ -34,8 +34,8 @@ RUN sh /home/config.sh \
  && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Install the bot:
-RUN git clone https://github.com/MadeWiguna/wiguna-cermin.git \
- && cd wiguna-cermin \
+RUN git clone https://github.com/MadeWiguna/wiguna-cermin.git mirrorbot/ \
+ && cd mirrorbot \
  && pip3 install -r requirements.txt
 
 RUN echo "Uploaded files:" && ls /home/stuff/
