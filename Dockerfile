@@ -36,7 +36,7 @@ RUN sh /home/config.sh \
 # Install the bot:
 RUN git clone https://github.com/MadeWiguna/Nyaa-Telegram-Bot.git \
  && Nyaa-Telegram-Bot \
- && npm install
+ && pip3 install -r requirements.txt
 
 RUN echo "Uploaded files:" && ls /home/stuff/
 
