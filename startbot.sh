@@ -6,42 +6,17 @@
 ## edit your Config Vars in heroku/app/settings and 
 ## restart the bot by turning the worker off and back on
 
-echo "Creating requirements.txt..."
+echo "Creating requirements-cli.txt..."
 cd /home/wiguna-cermin
-cat > requirements.txt << EOF
-{
-aiohttp
-anytree
-aria2p
-appdirs
-beautifulsoup4
-cloudscrape
-feedparser
-gitpython
+cat > requirements-cli.txt << EOF
+{ 
+oauth2client
 google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
-gunicorn
-heroku3
-js2py
-lk21
-lxml
-psutil
-psycopg2-binary
-pybase64
+progress
+progressbar2
+httplib2shim
+google_auth_oauthlib
 pyrogram
-python-dotenv
-python-magic
-python-telegram-bot
-qbittorrent-api
-requests
-speedtest-cli
-telegraph
-tenacity
-TgCrypto
-torrentool
-urllib3
-youtube_dl
 }
 EOF
 echo "Done."
