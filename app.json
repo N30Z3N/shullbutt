@@ -1,7 +1,7 @@
 {
-    "name": "tg-shellbot-heroku",
+    "name": "xlkkk",
     "description": "Heroku edition of github.com/botgram/shell-bot",
-    "keywords": ["shell", "telegram", "docker", "bot"],
+    "keywords": ["telegram", "docker", "bot"],
     "repository": "https://github.com/MadeWiguna/tg-shell-mirror-bot.git",
     "stack": "container",
     "env": {
