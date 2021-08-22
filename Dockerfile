@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     busybox \
     build-essential \
     nodejs \
+    aria2 \
     npm \ 
     ffmpeg \
     mediainfo \
