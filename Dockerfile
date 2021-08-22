@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
     sudo \
     wget \
     git \
+    openjdk-8-jre \
+    nano \
     make \
     busybox \
     build-essential \
